@@ -1,5 +1,17 @@
 
 <!DOCTYPE html>
+<style>
+   body {
+    /* background-color: /*#f1f1f1 #494949;*/
+     color: #ffffff;
+     margin: 0;
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+   .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
+   h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
+   p { color: rgba(255, 255, 255, 0.5); margin: 20px 0; line-height: 1.6; }
+   #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #050728; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } 
+</style>
 <html>
   <head>
     <title>404 &middot; rhdev.tk</title>
@@ -24,7 +36,9 @@
    </style>
   </head>
   <body>
-
+    <div id="particles-js"></div>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
     <div class="container">
 
       <h1>404</h1>
@@ -38,3 +52,116 @@
     </div>
   </body>
 </html>
+
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 155,
+      "density": {
+        "enable": true,
+        "value_area": 1800
+      }
+    },
+    "color": {
+      "value": "#698cff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 185,
+      "color": "#698cff",
+      "opacity": 0.56,
+      "width": 0.75
+    },
+    "move": {
+      "enable": true,
+      "speed": 4.5,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 285,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 125,
+        "duration": 5
+      },
+      "push": {
+        "particles_nb": 2
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
