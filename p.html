@@ -9,7 +9,7 @@
         margin: 0;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
-      .container { margin: 50% auto 50% auto; width: 600px; text-align: center; position:relative; }
+      .container { margin: 50px auto 50px auto; width: 600px; text-align: center;}
       a { color: #4183c4; text-decoration: none; }
       a:hover { text-decoration: underline; }
       h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
@@ -22,10 +22,8 @@
    </style>
   </head>
   <body>
-    <!-- particles.js container --> 
     <div id="particles-js"></div> 
-    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
     <div class="container">
       <h1>Particle Test</h1>
     </div>
@@ -39,7 +37,7 @@ particlesJS("particles-js", {
       "value": 88,
       "density": {
         "enable": true,
-        "value_area": 1000
+        "value_area": 1800
       }
     },
     "color": {
@@ -49,7 +47,7 @@ particlesJS("particles-js", {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#698cff"
+        "color": "#000000"
       },
       "polygon": {
         "nb_sides": 5
@@ -62,7 +60,7 @@ particlesJS("particles-js", {
     },
     "opacity": {
       "value": 1,
-      "random": false,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 1,
@@ -71,7 +69,7 @@ particlesJS("particles-js", {
       }
     },
     "size": {
-      "value": 4,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": false,
@@ -82,10 +80,10 @@ particlesJS("particles-js", {
     },
     "line_linked": {
       "enable": true,
-      "distance": 120,
+      "distance": 180,
       "color": "#698cff",
-      "opacity": 0.76,
-      "width": 1
+      "opacity": 0.56,
+      "width": 0.75
     },
     "move": {
       "enable": true,
